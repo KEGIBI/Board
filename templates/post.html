@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }} - 허접한 게시판</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 게시판 제목 -->
+        <h1 onclick="location.href='/'">허접한 게시판</h1>
+        <hr class="separator">
+
+        <!-- 게시글 내용 -->
+        <div class="card">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+            <small>{{ post.created_at }}</small>
+        </div>
+        <a href="/" class="create-button">목록으로</a>
+    </div>
+</body>
+</html>
